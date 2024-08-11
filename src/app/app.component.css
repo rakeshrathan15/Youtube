@@ -1,0 +1,68 @@
+/* Toolbar Styling */
+mat-toolbar {
+    background-color: #212121;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  
+  /* Input box styling inside the toolbar */
+  mat-toolbar input[type="text"] {
+    flex: 1;
+    margin: 0 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #121212;
+    color: white;
+    outline: none;
+    max-width: 600px;
+  }
+  
+  /* Icon button styling in the toolbar */
+  mat-toolbar mat-icon {
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Side navigation styling */
+  mat-sidenav {
+    background-color: #303030;
+    width: 250px;
+    padding-top: 16px;
+  }
+  
+  /* Side navigation button styling */
+  mat-sidenav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  mat-sidenav button {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  mat-sidenav button mat-icon {
+    margin-right: 16px;
+  }
+  
+  /* Content area styling */
+  mat-sidenav-content {
+    padding: 24px;
+    background-color: #181818;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Adding hover effect on side navigation buttons */
+  mat-sidenav button:hover {
+    background-color: #383838;
+  }
+  
