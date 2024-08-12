@@ -25,17 +25,37 @@
 
 
    <a [routerLink]="['subscribe']">
-    <button  mat-button><mat-icon>subscribe</mat-icon>
-      <span>subscribe</span>
+    <button  mat-button><mat-icon>subscriptions</mat-icon>
+      <span>Subscriptions</span>
    </button> 
   </a>
+
+  <a [routerLink]="['history']">
+    <button  mat-button><mat-icon>history</mat-icon>
+      <span>History</span>
+   </button> 
+  </a>
+
+  <a [routerLink]="['watchlater']">
+    <button  mat-button><mat-icon>watchlater</mat-icon>
+      <span>Watch Later</span>
+   </button> 
+  </a>
+
+  <a [routerLink]="['downloads']">
+    <button  mat-button><mat-icon>downloads</mat-icon>
+      <span>Downloads</span>
+   </button> 
+  </a>
+
+
+
+
+
 
   </mat-sidenav>
   <mat-sidenav-content>
           <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-
-
 

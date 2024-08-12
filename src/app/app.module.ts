@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { FormsModule } from '@angular/forms';
+import { HistoryComponent } from './history/history.component';
+import { DownloadsComponent } from './downloads/downloads.component';
+import { WatchLaterComponent } from './watch-later/watch-later.component';
 
 
 
@@ -21,7 +24,10 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     
-    SubscribeComponent
+    SubscribeComponent,
+          HistoryComponent,
+          DownloadsComponent,
+          WatchLaterComponent
   ],
   imports: [
     BrowserModule,

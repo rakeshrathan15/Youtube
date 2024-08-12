@@ -1,0 +1,47 @@
+/* Container for the video grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 16px; /* Space between grid items */
+    padding: 16px;
+    background-color: #181818; /* Background color matching YouTube's dark theme */
+  }
+  
+  /* Styling for each video item */
+  .video-item {
+    background-color: #212121; /* Slightly lighter background for video items */
+    border-radius: 8px; /* Rounded corners like YouTube */
+    overflow: hidden; /* Clips content like overflow images */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Iframe styling */
+  .video-item iframe {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border: none; /* Remove default border */
+  }
+  
+  /* Hover effect for video items */
+  .video-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6); /* Deeper shadow on hover */
+  }
+  
+  /* Video title styling */
+  .video-title {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .video-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust grid for smaller screens */
+    }
+  }
+  
